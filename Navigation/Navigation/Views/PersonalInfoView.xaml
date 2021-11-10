@@ -22,11 +22,11 @@
             <Label Text="Birthday Name" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="3" Grid.Column="0" />
             <Label Text="Gender" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="4" Grid.Column="0" />
 
-            <Entry Grid.Row="0" Grid.Column="1" />
-            <Entry Grid.Row="1" Grid.Column="1" />
-            <Entry Grid.Row="2" Grid.Column="1" />
-            <Entry Grid.Row="3" Grid.Column="1" />
-            <Entry Grid.Row="4" Grid.Column="1" />
+            <Entry Grid.Row="0" Text="{Binding FirstName}" Grid.Column="1" />
+            <Entry Grid.Row="1" Text="{Binding MiddleName}" Grid.Column="1" />
+            <Entry Grid.Row="2" Text="{Binding LastName}" Grid.Column="1" />
+            <Entry Grid.Row="3" Text="{Binding Birthday}" Grid.Column="1" />
+            <Entry Grid.Row="4" Text="{Binding Gender}" Grid.Column="1" />
 
             <Grid Grid.Row="5" Grid.Column="1">
                 <Grid.RowDefinitions>

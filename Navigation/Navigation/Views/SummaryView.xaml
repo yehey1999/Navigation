@@ -7,7 +7,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -16,23 +16,25 @@
 
             <StackLayout Grid.Row="0" Grid.Column="0">
                 <Label Text="Basic Info" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" />
-                <Label Text="Full Name" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
-                <Label Text="Birthday" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
-                <Label Text="Gender" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding FullName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
+                <Label Text="{Binding Birthday}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding Gender}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
             </StackLayout>
             
             <StackLayout Grid.Row="1" Grid.Column="0">
                 <Label Text="Educational Background" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" />
-                <Label Text="Elementary" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
-                <Label Text="High School" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
-                <Label Text="College" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding ElementaryDetails}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
+                <Label Text="{Binding HighSchoolDetails}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding CollegeDetails}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
             </StackLayout>
             
             <StackLayout Grid.Row="2" Grid.Column="0">
                 <Label Text="Skills" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" />
-                <Label Text="Skill 1" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
-                <Label Text="Skill 2" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
-                <Label Text="Skill 3" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding Skill1}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0"/>
+                <Label Text="{Binding Skill2}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding Skill3}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding Skill4}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
+                <Label Text="{Binding Skill5}" VerticalTextAlignment="Center" HorizontalTextAlignment="Left" Margin="50, 0" />
             </StackLayout>
 
             <Grid Grid.Row="3" Grid.Column="0">

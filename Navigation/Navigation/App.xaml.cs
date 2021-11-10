@@ -1,4 +1,5 @@
-﻿using Navigation.Views;
+﻿using Navigation.Services;
+using Navigation.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,7 +11,7 @@ namespace Navigation
         public App()
         {
             InitializeComponent();
-
+            DependencyService.Register<DataStore>();
             MainPage = new NavigationPage(new PersonalInfoView());
         }
 
