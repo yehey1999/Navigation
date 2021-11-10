@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation.Views.SkillsView">
+    <ContentPage.Content>
+        <Grid Padding="40,50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Skill 1" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="0" Grid.Column="0" />
+            <Label Text="Skill 2" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="1" Grid.Column="0" />
+            <Label Text="Skill 3" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="2" Grid.Column="0" />
+            <Label Text="Skill 4" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="3" Grid.Column="0" />
+            <Label Text="Skill 5" VerticalTextAlignment="Center" HorizontalTextAlignment="Right" Grid.Row="4" Grid.Column="0" />
+
+            <Entry Grid.Row="0" Grid.Column="1" />
+            <Entry Grid.Row="1" Grid.Column="1" />
+            <Entry Grid.Row="2" Grid.Column="1" />
+            <Entry Grid.Row="3" Grid.Column="1" />
+            <Entry Grid.Row="4" Grid.Column="1" />
+
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding OnBackCommand}" Text="Back" Grid.Row="0" Grid.Column="0" />
+                <Button Command="{Binding OnNextCommand}" Text="Next" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
