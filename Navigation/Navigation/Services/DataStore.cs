@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Navigation.Services
 {
-    public class DataStore : IDataStore<Person>
+    public class DataStore : IDataStore
     {
         public Person Person
         {

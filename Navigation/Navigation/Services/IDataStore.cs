@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Navigation.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Navigation.Services
 {
-    public interface IDataStore<T>
+    public interface IDataStore
     {
         void UpdatePersonInfo(string firstName, string lastName, string middleName, string birthday, string gender);
 
@@ -12,6 +13,6 @@ namespace Navigation.Services
 
         void AddSkill(string skill);
 
-        T GetPerson();
+        Person GetPerson();
     }
 }

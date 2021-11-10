@@ -10,7 +10,7 @@ namespace Navigation.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Person> DataStore => DependencyService.Get<IDataStore<Person>>();
+        public IDataStore DataStore => DependencyService.Get<IDataStore>();
 
         protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",
