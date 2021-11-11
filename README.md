@@ -1,5 +1,7 @@
 # Important Files
 
+#### Follow the default file structure of xamarin app 
+
 * App.xaml.cs => Register the DataStore, sets the root page to PersonalInfoView
 * Services/IDataStore.cs => interface for DataStore
 * Services/DataStore.cs => implements the IDataStore, initialize Person
